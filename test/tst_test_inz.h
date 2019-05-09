@@ -281,7 +281,7 @@ TEST(vectorMultipleOperation, mapReduceFirst)
 
 TEST(vectorMultipleOperation, mapReduceSecond)
 {
-    std::string s = "Deer Bear River Car Car River Dear Car Bear";
+    std::string s = "Deer Bear River Car Car River Car Bear";
     std::string delimiter = " ";
     std::vector<std::string> vect = {};
 
@@ -306,7 +306,7 @@ TEST(vectorMultipleOperation, mapReduceSecond)
         oss << "" << pair.first << ":" << pair.second << " " ;
     }
 
-    std::string i = "Bear:2 Car:3 Dear:1 Deer:1 River:2 ";
+    std::string i = "Bear:2 Car:3 Deer:1 River:2 ";
 
     ASSERT_EQ(oss.str(), i);
 }
